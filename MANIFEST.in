@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include frappe_face_recognition *.css
+recursive-include frappe_face_recognition *.csv
+recursive-include frappe_face_recognition *.html
+recursive-include frappe_face_recognition *.ico
+recursive-include frappe_face_recognition *.js
+recursive-include frappe_face_recognition *.json
+recursive-include frappe_face_recognition *.md
+recursive-include frappe_face_recognition *.png
+recursive-include frappe_face_recognition *.py
+recursive-include frappe_face_recognition *.svg
+recursive-include frappe_face_recognition *.txt
+recursive-exclude frappe_face_recognition *.pyc
