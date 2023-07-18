@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "autoname": "field:device_id",
+ "creation": "2023-07-18 14:36:08.828689",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "device_id",
+  "column_break_nopqb",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "device_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Device Id",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "column_break_nopqb",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-18 15:52:43.488164",
+ "modified_by": "Administrator",
+ "module": "Frappe Face Recognition",
+ "name": "License Device",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

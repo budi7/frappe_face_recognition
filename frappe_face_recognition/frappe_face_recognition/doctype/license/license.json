@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "autoname": "field:license_code",
+ "creation": "2023-07-18 14:21:57.281577",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client_name",
+  "client_email",
+  "client_phone",
+  "column_break_emajk",
+  "billing_city",
+  "billing_address",
+  "amended_from",
+  "section_break_d484n",
+  "license_code",
+  "devices"
+ ],
+ "fields": [
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "License",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "client_email",
+   "fieldtype": "Data",
+   "label": "Client Email"
+  },
+  {
+   "fieldname": "client_phone",
+   "fieldtype": "Data",
+   "label": "Client Phone"
+  },
+  {
+   "fieldname": "column_break_emajk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "billing_city",
+   "fieldtype": "Data",
+   "label": "Billing City"
+  },
+  {
+   "fieldname": "billing_address",
+   "fieldtype": "Text",
+   "label": "Billing Address"
+  },
+  {
+   "fieldname": "license_code",
+   "fieldtype": "Data",
+   "label": "License Code",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_d484n",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "devices",
+   "fieldtype": "Table",
+   "label": "Devices",
+   "options": "License Device"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-18 16:27:25.855944",
+ "modified_by": "Administrator",
+ "module": "Frappe Face Recognition",
+ "name": "License",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

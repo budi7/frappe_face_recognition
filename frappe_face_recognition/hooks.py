@@ -64,7 +64,7 @@ app_license = "MIT"
 # ------------
 
 # before_install = "frappe_face_recognition.install.before_install"
-# after_install = "frappe_face_recognition.install.after_install"
+after_install = "frappe_face_recognition.install.after_install"
 
 # Uninstallation
 # ------------
@@ -102,13 +102,12 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"License": {
+		"before_validate": "frappe_face_recognition.frappe_face_recognition.hooks.license.beforeValidate"
+
+	}
+}
 
 # Scheduled Tasks
 # ---------------
